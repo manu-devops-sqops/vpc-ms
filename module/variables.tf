@@ -1,7 +1,7 @@
 variable "name" {
   description = "Name prefix for VPC resources"
   type        = string
-  default     = "myvpc"
+  default     = "myvpc-ms"
 }
 
 variable "vpc_cidr" {
@@ -19,5 +19,5 @@ variable "public_subnets" {
 variable "availability_zones" {
   description = "Availability Zones for the subnets"
   type        = list(string)
-  default     = ["us-east-1a", "us-east-1b"]
+  default     = ["ap-south-1a", "ap-south-1b"]
 }
